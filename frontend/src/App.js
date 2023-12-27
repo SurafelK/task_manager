@@ -1,7 +1,11 @@
+
+import { ToastContainer, toast } from 'react-toastify';
+import TaskList from './components/TaskList';
+
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
+    <div className="app">
+      <TaskList/>
     </div>
   );
 }

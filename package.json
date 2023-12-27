@@ -6,14 +6,19 @@
   "scripts": {
     "start": "node backend/server.js",
     "backend": "nodemon backend/server.js",
-    "frontend":"npm start --prefix frontend"
+    "frontend": "npm start --prefix frontend",
+    "both": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Surafel",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^8.0.3"
+    "mongoose": "^8.0.3",
+    "react-router-dom": "^6.21.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
   }
 }
